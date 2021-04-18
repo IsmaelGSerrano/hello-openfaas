@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: $OPENFAAS_URL
+functions:
+  hello-python:
+    lang: pydatascience
+    handler: ./hello-python
+    image: $OPENFAAS_PREFIX/hello-python:latest
+
